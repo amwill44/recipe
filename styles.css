@@ -161,10 +161,15 @@ nav {
     top: 0;
     padding: 10px;
 }
+nav ul {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+}
 label {
     cursor: pointer;
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
     position: relative;
     user-select: none;
 }
@@ -206,6 +211,28 @@ input:checked ~ label span:after {
 }
 input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
     top: 0;
+}
+.icon-tabler-tools-kitchen {
+    position: absolute;
+    top: 0px;
+    left: 25%;
+    padding: 10px 100px;
+    background: #EB5428;
+}
+.icon-tabler-user-circle {
+    position: absolute;
+    top: 0px;
+    left: 79%;
+    padding: 10px 100px;
+}
+.signin {
+    position: absolute;
+    top: 50px;
+    left: 365px;
+    font-size: 15px;
+    font-family: Bebas Neue;
+    color:black;
+    text-decoration: none;
 }
 footer {
     font-family: Bebas Neue;
