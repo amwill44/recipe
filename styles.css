@@ -1,0 +1,222 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* code reset above, my code starts here */
+
+html {
+    background: rgba(122, 191, 191, .5)
+}
+body {
+    background: #F2F2F2;
+    max-width: 414px;
+    margin: 0px auto;
+    line-height: normal;
+}
+h1 {
+    font-family: Bebas Neue;
+    text-align: center;
+    padding: 15px;
+    padding-top: 125px;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+menu li {
+    display: inline;
+    list-style-type: none;
+}
+menu a {
+    color: #EB5428;
+    text-decoration: none;
+    font-family: Bebas Neue;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 15px;
+}
+#tacos img{
+    width: 414px;
+}
+#tacos p{
+    font-family: Montserrat;
+    font-size: 15px;
+    padding: 5px 15px;
+
+}
+h2 {
+    font-family: Bebas Neue;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding:10px 0px;
+    text-align: center;
+}
+#details dt {
+    font-family: Bebas Neue;
+    font-weight: bold;
+    font-size: 15px;
+    float: left;
+    clear: left;
+    padding: 5px 10px;
+}
+#details dd {
+    font-family: Montserrat;
+    font-size: 15px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+#ingredients li {
+    font-family: Montserrat;
+    list-style-type: square;
+    padding: 5px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+#directions li {
+    font-family: Montserrat;
+    list-style-type: decimal;
+    padding: 10px 5px;
+    margin-left: 25px;
+    font-size: 15px;
+}
+aside {
+    background: #7ABFBF;
+}
+aside img{
+    width: 25%;
+    float: left;
+    padding: 5px;
+}
+aside h3 a{
+    color: black;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 25px 0px;
+
+}
+aside p {
+    font-family: Montserrat;
+    font-size: 15px;
+    padding-top: 10px;
+}
+aside dt, dd {
+    visibility: hidden;
+    font-size: 0%;
+}
+aside h4 {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 5px;
+}
+nav {
+    display: inline;
+    position: absolute;
+    top: 0;
+    padding: 10px;
+}
+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 20px;
+    position: relative;
+    user-select: none;
+}
+label span {
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+    display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+footer {
+    font-family: Bebas Neue;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+footer img {
+    width: 45%;
+    padding-top: 10px;
+}
+footer p {
+    padding-top: 15px;
+}
