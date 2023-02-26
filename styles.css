@@ -62,7 +62,7 @@ h1 {
     font-family: Bebas Neue;
     text-align: center;
     padding: 15px;
-    padding-top: 125px;
+    padding-top: 200px;
     font-size: 45px;
     font-weight: bold;
     text-transform: uppercase;
@@ -165,6 +165,10 @@ nav ul {
     max-height: 0;
     transition: max-height 1s ease-out;
     background: rgba(122, 191, 191, .5);
+    list-style-type: none;
+}
+nav ul li a{
+    color: black;
 }
 label {
     cursor: pointer;
@@ -173,11 +177,30 @@ label {
     position: relative;
     user-select: none;
     height: 100px;
-    width: 10px;
+    width: 25vw;
 }
-
-#checkbox {
+nav input, {
     display: none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+header input {
+    position: absolute;
+    top:125px;
+    left: 195px;
+    border-color: #EB5428;
+    text-align: center;
+    font-size: 19.5px;
+    padding: 10px 65px;
+    font-family: Bebas Neue;
+}
+header button {
+    position: absolute;
+    top:125px;
+    left: 500px;
+    background: #EB5428;
+    border-color: #EB5428;
 }
 .icon-tabler-tools-kitchen {
     position: absolute;
