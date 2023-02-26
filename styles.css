@@ -185,6 +185,15 @@ nav input, {
 input:checked ~ ul {
     max-height: 500px;
 }
+label span {
+    position: absolute;
+    top: 50px;
+    right: 168px;
+    font-size: 15px;
+    font-family: Bebas Neue;
+    color:black;
+    text-decoration: none;
+}
 header input {
     position: absolute;
     top:125px;
@@ -211,14 +220,14 @@ header button {
 }
 .icon-tabler-user-circle {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 79%;
     padding: 10px 100px;
 }
 .signin {
     position: absolute;
-    top: 50px;
-    left: 365px;
+    top: 60px;
+    right: -78px;
     font-size: 15px;
     font-family: Bebas Neue;
     color:black;
