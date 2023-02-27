@@ -129,6 +129,7 @@ h2 {
     padding: 5px 10px;
 }
 #details dd {
+    visibility: visible;
     font-family: Montserrat;
     font-size: 15px;
     padding-top: 6px;
@@ -406,6 +407,60 @@ footer p {
         top: 15px; 
         left: -35px;
         background: rgba(0,0,0,.0);
+    }
+    #details {
+        text-align: center;
+    }
+    #wrapped {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #ingredients {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-left: 0px;
+    }
+    #directions {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    aside h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #mexican #guacamole {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #salsa #tortillas {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer{
+        width: 768;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer img {
+        padding-left: 105px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    footer p {
+        float: left;
+        padding-top: 15px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
 
 }
 @media screen and (min-width:1280px) {
