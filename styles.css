@@ -464,5 +464,177 @@ footer p {
 
 }
 @media screen and (min-width:1280px) {
+    body {
+        max-width: 1280px;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left:auto;
+        right: auto;
+        width: 1280px;
+        padding: 75px 0px;
+        background-color: #F2F2F2;
+        border-bottom: solid;
+        border-color: rgba(0,0,0,.2);
+    }
+    nav {
+        width: 1280px;
+    }
+    nav ul {
+        display: flex;
+        overflow: visible;
+        list-style-type: none;
+        text-align: center;
+    }
+    nav ul li a{
+        color: #EB5428;
+        font-family: Bebas Neue;
+        font-size: 15px;
+        padding: 20px 10px;
+        text-decoration: none;
+    }
+    nav ul li a:hover {
+        color: #7ABFBF;
+        opacity: .5;
+    }
+    nav ul li img {
+        display: inline;
+        width: 100px;
+    }
+    label {
+        display: none;
+    }
+    nav ul #homelink {
+        display: none;
+    }
+    header input {
+        position: absolute;
+        top: 10px;
+        left: 300px;
+        border-color: #EB5428;
+        text-align: center;
+        font-size: 19.5px;
+        padding: 10px 65px;
+        font-family: Bebas Neue;
+    }
+    header button {
+        position: absolute;
+        top:10px;
+        left: 600px;
+        background: #EB5428;
+        border-color: #EB5428;
+    }
+    .icon-tabler-tools-kitchen {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 0px 10px;
+        background: #EB5428;
+    }
+    .icon-tabler-user-circle {
+        position: absolute;
+        top: 0px;
+        left: 610px;
+        padding: 10px 100px;
+    }
+    .signin {
+        position: absolute;
+        top: 30px;
+        right: 5px;
+        font-size: 15px;
+        font-family: Bebas Neue;
+        color:black;
+        text-decoration: none;
+    }
+    h1 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+        padding-top: 160px;
+        padding-left: 10px;
+    }
+    #tacos {
+        display: grid;
+        grid-template-columns: .3fr 1fr 1fr;
+    }
+    #tacos img {
+        width: 500px;
+        padding-top:65px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    #tacos p{
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    .menu1 {
+        display: grid;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        border: solid #EB5428;
+        background: rgba(255, 255, 255,.8);
+    }
+    .menu1 li {
+        list-style-type: none;
+    }
+    .menu1 button {
+        position: relative;
+        top: 15px; 
+        left: -35px;
+        background: rgba(0,0,0,.0);
+    }
+    #details {
+        text-align: center;
+    }
+    #wrapped {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #ingredients {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-left: 0px;
+    }
+    #directions {
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+    aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    aside h2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    #mexican #guacamole {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    #salsa #tortillas {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer{
+        width: 768;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .menu2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    footer img {
+        padding-left: 105px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    footer p {
+        float: left;
+        padding-top: 15px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 
 }
